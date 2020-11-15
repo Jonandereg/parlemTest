@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const modelDefiners = [require('./countries'), require('./dates'), require('./holidays')];
-const { DATABASE } = require('../../../config/config');
-const { applyAssociations } = require('../associations');
+const modelDefiners = [require('./customers'), require('./products')];
+const { DATABASE } = require('../../config');
+const { applyAssociations } = require('./associations');
 
 const Op = Sequelize.Op;
 const operatorsAliases = {
