@@ -1,5 +1,4 @@
 const db = require('../integration/models');
-const customers = require('../integration/models/customers');
 
 const getClient = async (req, res) => {
   const customerId = req.body.customerId;
